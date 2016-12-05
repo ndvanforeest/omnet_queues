@@ -1,0 +1,31 @@
+2007, December (NvF)
+- Changed some minor parts of the tutorial to bring it in line with omnetpp-3.3
+- Changed minor parts of the code so that all packages compile against omnetpp-3.3 with gcc 4.1.2
+
+
+2002, June 10 (NvF)
+ - added various libraries: ssfifo, msfifo, prosh, open, closed
+ - changed demo/ directory name to tutorial/		
+ - Changed some lines in the tutorial document to make it consistent 
+	again with its surroundings.
+ - Added the Erlang(=gamma) distribution to tutorial/distributions.cc
+ - added MakeClean to make cleaning up the directories much easier.	
+	
+2002, April 16 (NvF)
+ - Changed the directory structure such that it is clear which parts belong 
+   to the library and to the demo/tutorial.
+	
+2001, May 8, (NvF)
+ - corrected typos in tutorial.tex
+ - improved doc_src makefile
+ - other smaller fixes
+2001, May 6, (AV)
+ - takeover from Queues-0.1:
+     - checked in sources, tutorial.tex and *.el files
+     - cosmetics on sources (tabs to spaces, indentation, file headings, etc.)
+ - renamed 'some' script to 'run' (also in tutorial.tex)
+ - removed the 'rm queues' line from the 'run' script, and removed the
+   corresponding sentence from tutorial.tex, too.
+ - in tutorial.tex, replaced all occurrences of 'makemake' with 'opp_makemake'
+ - added makefile for creating pdf from the latex sources
+ - added MSVC makefile, updated unix makefile

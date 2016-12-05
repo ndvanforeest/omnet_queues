@@ -1,0 +1,29 @@
+# This file is not intended to be used by most users. It can be safely
+# removed. The reason for its existence is to easily clean up the
+# directories before sending the queues package out to the community.
+
+# To run it in a useful way, type:
+# % make -f MakeClean clean
+# 
+# After the directories have been cleaned:
+# cd ..
+# tar cvfz queues.tgz --exclude *.svn queues/
+# 
+
+
+donothing: 
+
+clean: subdirclean
+
+subdirclean:
+	- cd  ample && $(MAKE) clean
+	- cd  closed && $(MAKE) clean
+	- cd  doc_src && $(MAKE) clean
+	- cd  manySenderFifo && $(MAKE) clean
+	- cd  msfifo && $(MAKE) clean
+	- cd  open && $(MAKE) clean
+	- cd  prosh && $(MAKE) clean
+	- cd  queuesTut && $(MAKE) clean
+	- cd  ssfifo && $(MAKE) clean
+
+

@@ -1,0 +1,10 @@
+Files: Blocking queues
+Author: Nick Van Foreest.
+Date: April, 16th, 2002.
+
+Here we study the effect of blocking on the throughput of a network of
+queues. When a system is full it informs the generator to stop
+sending, and when there is room the system informs the generator
+station to start sending again. I have not yet enabled the fifo
+stations themselves to communicate among themselves so as implement
+the blocking protocol between the fifo stations.

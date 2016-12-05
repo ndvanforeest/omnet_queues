@@ -1,0 +1,17 @@
+Files: multi server queue
+Author: Nicky van Foreest
+Date: April, 16th, 2002
+
+These files implement a multi-server fifo queue. The code is a
+modification of the single-server fifo queue. I did not try to
+implement the multi-server queue such that it is visually clear what
+is going on in the simulation. This would be a tremendous overhead on
+the CPU. Hence, to understand the difference with the single server
+queue--without looking at the code--it is best to track job-ids. Then
+you will find out that indeed a multi-server queue is active; for
+instance, you can see that jobs do not always leave in the order in
+which they arrived (which can never be the case in a single server
+fifo queue.)
+
+
+

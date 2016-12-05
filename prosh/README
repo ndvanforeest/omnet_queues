@@ -1,0 +1,11 @@
+Files: Processor sharing queue
+Author: Nicky van Foreest
+Date: April, 19th, 2002
+
+These files implement a processor sharing queue. The code is a
+modification of the single-server fifo queue. It is not easy to show
+graphically what happens inside the server node. Hence, I have not
+tried to do this. Check the code to ensure that the processor sharing
+queue is indeed implemented (hopefully).
+
+
